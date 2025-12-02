@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website - SJSU Assignment</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container">
+            <ul>
+                <li><a href="#resume-section"><i class="fas fa-id-card"></i> Resume</a></li>
+                <li><a href="#map-section"><i class="fas fa-map-marked-alt"></i> SJSU Map</a></li>
+                <li><a href="#weather-section"><i class="fas fa-sun"></i> Weather</a></li>
+                <!-- Part 4: The survey link -->
+                <li><a href="SURVEY_LINK_HERE" target="_blank" class="survey-link"><i class="fas fa-poll"></i> Complete Survey</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- Part 1: Resume Section -->
+        <section id="resume-section" class="card">
+            <div class="profile-header">
+                <!-- Profile Picture (Place your file in images/profile.jpg) -->
+                <img src="images/profile.jpg" alt="Abenezer Bonga's Professional Headshot" class="profile-pic">
+                <h1>ABENEZER BONGA</h1>
+                <p><strong>Email:</strong> bongaabenezer@gmail.com</p>
+                <p><strong>Phone:</strong> +415-940-0832</p>
+                <p><strong>Location:</strong> San Francisco, CA</p>
+
+                <!-- Resume PDF Link (Place your file in documents/resume.pdf) -->
+                <a href="documents/resume.pdf" download="Abenezer_Bonga_Resume.pdf" class="btn download-btn">
+                    <i class="fas fa-download"></i> Download Full Resume (PDF)
+                </a>
+            </div>
+
+            <hr>
+
+            <h2><i class="fas fa-user-circle"></i> Profile</h2>
+            <p>Motivated professional with a strong interest in business analysis and product management. Skilled in problem-solving, data analysis, and team coordination, with experience leading projects and improving processes in fast-paced environments. Passionate about bridging technology and business to deliver results and enhance user experience.</p>
+            
+            <hr>
+
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul>
+                <li>
+                    <h3>BA - Management Information Systems</h3>
+                    <p><strong>Institution:</strong> San José State University | School of Business</p>
+                    <p><strong>Year:</strong> 2020 – 2025 (Expected)</p>
+                </li>
+                <li>
+                    <h3>High School Diploma</h3>
+                    <p><strong>Institution:</strong> Galileo Academy of Science and Technology, SF, CA</p>
+                    <p><strong>Year:</strong> 2016 – 2020</p>
+                </li>
+            </ul>
+
+            <hr>
+
+            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+            
+            <!-- Job 1: Inter-Con Security Systems -->
+            <div class="job-entry">
+                <h3>Site Security Supervisor - Google Campus</h3>
+                <p><strong>Company:</strong> Inter-Con Security Systems | 2023 – PRESENT</p>
+                <ul>
+                    <li>Managed security operations, documentation, reporting, and team coordination; supervised security officers and addressed their concerns.</li>
+                    <li>Utilized Excel (Gantt charts), Smartsheet, Microsoft Teams, and Slack for effective planning and communication.</li>
+                    <li>Responded to incidents and documented all security-related activity.</li>
+                    <li>Collaborated with GSOC to resolve issues with facilities, badge access, and site operations.</li>
+                </ul>
+            </div>
+            
+            <!-- Job 2: Business Analyst Project -->
+            <div class="job-entry">
+                <h3>Business Analyst - VPHO Resturant (Systems Analysis Project)</h3>
+                <p><strong>Company:</strong> San José State University | Spring 2025</p>
+                <ul>
+                    <li>Partnered with a local restaurant to identify operational inefficiencies in their outdated cash transaction system through on-site research and customer review analysis.</li>
+                    <li>Designed and evaluated a self-service kiosk system projected to reduce labor costs by 15% and increase order throughput by 20%.</li>
+                    <li>Conducted cost-benefit, ROI, and break-even analyses, showing a **55% ROI** and profitability within 2 years.</li>
+                    <li>Diagnosed key issues in payment and order workflows that caused longer wait times and revenue leakage.</li>
+                    <li>Delivered a data-backed modernization plan that improved financial visibility and customer experience, presented to business stakeholders.</li>
+                </ul>
+            </div>
+
+            <!-- Job 3: City and County of San Francisco -->
+            <div class="job-entry">
+                <h3>Data Entry Intern - Real Estate Division</h3>
+                <p><strong>Company:</strong> City and County of San Francisco |  June 2021 – August 2021</p>
+                <ul>
+                    <li>Managed and updated property records with high attention to accuracy, ensuring data integrity.</li>
+                    <li>Supported administrative tasks and coordinated internal meetings.</li>
+                    <li>Assisted in coordinating meetings with clients and stakeholders, ensuring timely communication and follow-up on property-related matters.</li>
+                </ul>
+            </div>
+            
+            <hr>
+
+            <h2><i class="fas fa-cogs"></i> Skills & Languages</h2>
+            <p class="skills-list">
+                **Technical Skills:** Microsoft Excel / Google Sheets, SQL, Tableau, Python (basic analytics), Google Data Studio, JIRA / Asana / Trello.
+                <br>
+                **Core Skills:** Team Player, Bias for action, Deliver results, Active Listening, Quick Adaptability, Effective Communication.
+                <br>
+                **Languages:** English (Fluent), Amharic (Fluent).
+            </p>
+        </section>
+
+        <!-- Part 2: Embedded Google Map -->
+        <section id="map-section" class="card">
+            <h2><i class="fas fa-building"></i> Embedded Google Map of SJSU</h2>
+            <p>Locate the main campus of San Jose State University.</p>
+            <div class="map-container">
+                <!-- 
+                    ACTION REQUIRED: 
+                    1. Go to Google Maps and search for SJSU.
+                    2. Click 'Share' -> 'Embed a map'.
+                    3. Copy the <iframe> code and paste it here, replacing the placeholder below.
+                -->
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.9360879644686!2d-121.8841753874747!3d37.33518774211158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcae5f385c363%3A0x6a08465d66668383!2sSan%20Jose%20State%20University!5e0!3m2!1sen!2sus!4v1700445678901!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Google Map of San Jose State University">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Part 3: Current Weather using OpenWeatherMap API -->
+        <section id="weather-section" class="card">
+            <h2><i class="fas fa-cloud"></i> Current Weather in San Jose</h2>
+            <div id="weather-display" class="weather-box">
+                <!-- Content will be injected by weather.js -->
+                <p>Loading weather data...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abenezer Bonga | SJSU Web Development Assignment 10</p>
+    </footer>
+
+    <!-- Link to the JavaScript file, as instructed, before the closing </body> tag -->
+    <script src="weather.js"></script>
+</body>
+</html>
