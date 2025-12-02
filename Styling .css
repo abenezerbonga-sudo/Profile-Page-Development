@@ -1,0 +1,221 @@
+/* --- Global Styles and Reset --- */
+:root {
+    --sjsu-blue: #005691;
+    --sjsu-gold: #e5a823;
+    --text-color: #333;
+    --bg-light: #f4f7f6;
+    --card-bg: #ffffff;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    color: var(--sjsu-blue);
+    margin-top: 0;
+}
+
+h2 {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* --- Header and Navigation --- */
+.main-header {
+    background-color: var(--sjsu-blue);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background-color: #004070;
+}
+
+.survey-link {
+    background-color: var(--sjsu-gold);
+    color: var(--sjsu-blue) !important;
+    border-radius: 0 0 5px 5px;
+    padding: 15px 25px;
+}
+.survey-link:hover {
+    background-color: #d1951f;
+}
+
+/* --- Card & Section Layout --- */
+.card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Resume Section (Part 1) --- */
+.profile-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid var(--sjsu-gold);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.download-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #218838;
+}
+
+.job-entry {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid var(--sjsu-gold);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li i {
+    color: var(--sjsu-blue);
+    margin-right: 8px;
+}
+
+.skills-list {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    line-height: 1.8;
+}
+
+/* --- Embedded Map Section (Part 2) --- */
+.map-container {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    display: block; /* Removes bottom space */
+}
+
+/* --- Weather Section (Part 3) --- */
+.weather-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-left: 6px solid var(--sjsu-blue);
+    background-color: #e8f5e9; /* Light green/blue for weather */
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+#weather-display h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: var(--sjsu-blue);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 30px;
+}
+
+/* --- Responsive Design (Mobile First) --- */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    .survey-link {
+        border-radius: 0 0 8px 8px;
+    }
+}
